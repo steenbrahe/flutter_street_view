@@ -15,7 +15,9 @@ dependencies:
   meta: ^1.3.0
   kotlin_scope_function: ^1.0.0
   flutter_plugin_android_lifecycle: ^2.0.1
-  google_maps: ^6.1.0
+  # Web only (flutter_google_street_view_web.dart); the upper bound lets an app's
+  # google_maps_flutter stay current. The web side is not tested against 7 and 8.
+  google_maps: '>=6.1.0 <9.0.0'
   street_view_platform_interface:
     path: ../street_view_platform_interface
 
